@@ -8,7 +8,10 @@ import {
 
 import sequelize from "../db/database";
 
-class User extends Model<InferAttributes<User>, InferCreationAttributes<User>> {
+class User extends Model<
+  InferAttribugittes<User>,
+  InferCreationAttributes<User>
+> {
   declare id: CreationOptional<number>;
   declare username: string;
   declare password: string;
